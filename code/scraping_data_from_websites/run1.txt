@@ -1,0 +1,116 @@
+"/Users/kausik/Documents/Project BlackCoffer/venv/bin/python" /Users/kausik/Documents/Project BlackCoffer/parsing_websites.py
+Content of 123.0 written into file_123.txt
+Content of 321.0 written into file_321.txt
+An error occurred for URL_ID: 2345.0, Error: 2
+Content of 4321.0 written into file_4321.txt
+Content of 432.0 written into file_432.txt
+Content of 2893.8 written into file_2893.txt
+Content of 3355.6 written into file_3355.txt
+Content of 3817.4 written into file_3817.txt
+An error occurred for URL_ID: 4279.2, Error: 8
+Content of 4741.0 written into file_4741.txt
+Content of 5202.8 written into file_5202.txt
+Content of 5664.6 written into file_5664.txt
+Content of 6126.4 written into file_6126.txt
+Content of 6588.2 written into file_6588.txt
+Content of 7050.0 written into file_7050.txt
+Content of 7511.8 written into file_7511.txt
+Content of 7973.6 written into file_7973.txt
+An error occurred for URL_ID: 8435.4, Error: 17
+Content of 8897.2 written into file_8897.txt
+Content of 9359.0 written into file_9359.txt
+Content of 9820.8 written into file_9820.txt
+Content of 10282.6 written into file_10282.txt
+Content of 10744.4 written into file_10744.txt
+Content of 11206.2 written into file_11206.txt
+An error occurred for URL_ID: 11668.0, Error: 24
+Content of 12129.8 written into file_12129.txt
+Content of 12591.6 written into file_12591.txt
+Content of 13053.4 written into file_13053.txt
+Content of 13515.2 written into file_13515.txt
+Content of 13977.0 written into file_13977.txt
+Content of 14438.8 written into file_14438.txt
+An error occurred for URL_ID: 14900.6, Error: 31
+Content of 15362.4 written into file_15362.txt
+Content of 15824.2 written into file_15824.txt
+Content of 16286.0 written into file_16286.txt
+Content of 16747.8 written into file_16747.txt
+Content of 17209.6 written into file_17209.txt
+An error occurred for URL_ID: 17671.4, Error: 37 ---> 404
+Content of 18133.2 written into file_18133.txt
+Content of 18595.0 written into file_18595.txt
+Content of 19056.8 written into file_19056.txt
+Content of 19518.6 written into file_19518.txt
+Content of 19980.4 written into file_19980.txt
+Content of 20442.2 written into file_20442.txt
+Content of 20904.0 written into file_20904.txt
+Content of 21365.8 written into file_21365.txt
+Content of 21827.6 written into file_21827.txt
+Content of 22289.4 written into file_22289.txt
+Content of 22751.2 written into file_22751.txt
+Content of 23213.0 written into file_23213.txt
+Content of 23674.8 written into file_23674.txt
+Content of 24136.6 written into file_24136.txt
+Content of 24598.4 written into file_24598.txt
+Content of 25060.2 written into file_25060.txt
+Content of 25522.0 written into file_25522.txt
+Content of 25983.8 written into file_25983.txt
+Content of 26445.6 written into file_26445.txt
+Content of 26907.4 written into file_26907.txt
+Content of 27369.2 written into file_27369.txt
+Content of 27831.0 written into file_27831.txt
+Content of 28292.8 written into file_28292.txt
+Content of 28754.6 written into file_28754.txt
+Content of 29216.4 written into file_29216.txt
+Content of 29678.2 written into file_29678.txt
+Content of 30140.0 written into file_30140.txt
+Content of 30601.8 written into file_30601.txt
+Content of 31063.6 written into file_31063.txt
+Content of 31525.4 written into file_31525.txt
+Content of 31987.2 written into file_31987.txt
+Content of 32449.0 written into file_32449.txt
+Content of 32910.8 written into file_32910.txt
+An error occurred for URL_ID: 33372.6, Error: 71
+An error occurred for URL_ID: 33834.4, Error: 72
+Content of 34296.2 written into file_34296.txt
+Content of 34758.0 written into file_34758.txt
+Content of 35219.8 written into file_35219.txt
+Content of 35681.6 written into file_35681.txt
+Content of 36143.4 written into file_36143.txt
+Content of 36605.2 written into file_36605.txt
+Content of 37067.0 written into file_37067.txt
+An error occurred for URL_ID: 37528.8, Error: 80
+Content of 37990.6 written into file_37990.txt
+Content of 38452.4 written into file_38452.txt
+Content of 38914.2 written into file_38914.txt
+Content of 39376.0 written into file_39376.txt
+Content of 39837.8 written into file_39837.txt
+Content of 40299.6 written into file_40299.txt
+An error occurred for URL_ID: 40761.4, Error: 87
+An error occurred for URL_ID: 41223.2, Error: 88
+Content of 41685.0 written into file_41685.txt
+Content of 42146.8 written into file_42146.txt
+Content of 42608.6 written into file_42608.txt
+An error occurred for URL_ID: 43070.4, Error: 92
+Content of 43532.2 written into file_43532.txt
+Content of 43994.0 written into file_43994.txt
+Content of 44455.8 written into file_44455.txt
+Content of 44917.6 written into file_44917.txt
+Content of 45379.4 written into file_45379.txt
+Content of 45841.2 written into file_45841.txt
+Content of 46303.0 written into file_46303.txt
+Content of 46764.8 written into file_46764.txt
+Content of 47226.6 written into file_47226.txt
+Content of 47688.4 written into file_47688.txt
+Content of 48150.2 written into file_48150.txt
+Content of 48612.0 written into file_48612.txt
+Content of 49073.8 written into file_49073.txt
+Content of 49535.6 written into file_49535.txt
+Content of 49997.4 written into file_49997.txt
+Content of 50459.2 written into file_50459.txt
+Content of 50921.0 written into file_50921.txt
+Content of 51382.8 written into file_51382.txt
+Content of 51844.6 written into file_51844.txt
+Content of 52306.4 written into file_52306.txt
+Content of 52768.2 written into file_52768.txt
+[]

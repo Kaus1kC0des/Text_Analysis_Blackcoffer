@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+seaborn
+nltk
+scikit-learn
+newspaper3k
+textblob
+beautifulsoup4
+requests
+selenium
+scikit-learn-intelex

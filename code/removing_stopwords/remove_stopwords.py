@@ -6,9 +6,13 @@ stopwords_directory = "/Users/kausik/Documents/Project BlackCoffer/StopWords"
 # Initialize a list to store stopwords
 stopwords_list = []
 
+with open("/Users/kausik/Documents/Project BlackCoffer/StopWords/StopWords_Currencies.txt",'rb') as file:
+    stopwords_from_file = [line.strip() for line in file.readlines()]
+    stopwords_list.extend(stopwords_from_file)
+
 # Loop through each file in the stopwords directory
 for filename in os.listdir(stopwords_directory):
-    if filename.endswith('.txt'):
+    if filename.endswith('.txt') and filename!="StopWords_Currencies.txt":
         file_path = os.path.join(stopwords_directory, filename)
         try:
             with open(file_path, 'r', encoding='utf-8') as file:

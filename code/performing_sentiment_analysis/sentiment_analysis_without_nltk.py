@@ -1,9 +1,3 @@
-import nltk
-from textblob import TextBlob
-import pandas
-import csv
-import numpy
-import glob
 import os
 import time
 

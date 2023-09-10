@@ -1,48 +1,46 @@
 import os
-import nltk
-from nltk.tokenize import sent_tokenize,word_tokenize
-from nltk.corpus import stopwords
-# nltk.download('punkt')
-# nltk.download('stopwords')
 
-swords = []
+# Directory containing stopwords files
 stopwords_directory = "/Users/kausik/Documents/Project BlackCoffer/StopWords"
+
+# Initialize a list to store stopwords
+stopwords_list = []
+
+# Loop through each file in the stopwords directory
 for filename in os.listdir(stopwords_directory):
-    if filename.endswith('.txt'):  # Make sure to process only .txt files
+    if filename.endswith('.txt'):
         file_path = os.path.join(stopwords_directory, filename)
-        with open(file_path, 'rb') as file:  # Open in binary mode
+        with open(file_path, 'r', encoding='utf-8') as file:
+            stopwords_from_file = [line.strip() for line in file.readlines()]
+            stopwords_list.extend(stopwords_from_file)
+
+# Create a set of stopwords for faster lookup
+stopwords_set = set(stopwords_list)
+
+# Function to remove stopwords from text
+def remove_stopwords(text):
+    words = text.split()
+    cleaned_words = [word for word in words if word.lower() not in stopwords_set]
+    cleaned_text = ' '.join(cleaned_words)
+    return cleaned_text
+
+# Directory containing text files to be cleaned
+input_directory = "/Users/kausik/Documents/Project BlackCoffer/contents"
+output_directory = "/Users/kausik/Documents/Project BlackCoffer/clean_files"
+
+# Loop through each text file in the input directory, clean it, and save to the output directory
+for filename in os.listdir(input_directory):
+    if filename.endswith('.txt'):
+        input_path = os.path.join(input_directory, filename)
+        output_path = os.path.join(output_directory, filename)
+
+        with open(input_path, 'r', encoding='utf-8') as file:
             content = file.read()
 
-            # Specify the correct encoding if known (e.g., 'latin-1')
-            try:
-                # Assuming 'content' is a string containing the file content
-                stops = set([line.replace('\r', '') for line in content.decode('utf-8').split('\n')])
-                swords.append(stops)
-            except UnicodeDecodeError:
-                with open("/Users/kausik/Documents/Project BlackCoffer/code/removing_stopwords/errors.txt",'w') as f:
-                    f.write(f"{filename}")
-                    f.close()
-                print(f"Error decoding file {filename}. It may have a different encoding.")
+        cleaned_content = remove_stopwords(content)
 
-# Assuming you have a list of sets named 'stopwords_list'
-# Merge all sets into a single list without sets
-merged_stopwords = []
-for stopword in swords:
-    merged_stopwords.extend(stopword)
+        with open(output_path, 'w', encoding='utf-8') as output_file:
+            output_file.write(cleaned_content)
 
-for i in os.listdir("/Users/kausik/Documents/Project BlackCoffer/contents"):
-    with open(i,'r') as file:
-        uncleaned_content = file.read()
-    file.close()
-
-    cleaned = [word for word in uncleaned_content if word not in merged_stopwords]
-    with open(f"/Users/kausik/Documents/Project BlackCoffer/clean_files/{i}",'w') as f:
-        f.write(cleaned)
-    f.close()
-
-
-# 'merged_stopwords' now contains all stopwords in a single list
-
-
-print(len(merged_stopwords))
-# print(swords)
+# Print the number of stopwords loaded
+print(len(stopwords_set))

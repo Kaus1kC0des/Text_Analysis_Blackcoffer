@@ -10,9 +10,12 @@ stopwords_list = []
 for filename in os.listdir(stopwords_directory):
     if filename.endswith('.txt'):
         file_path = os.path.join(stopwords_directory, filename)
-        with open(file_path, 'r', encoding='utf-8') as file:
-            stopwords_from_file = [line.strip() for line in file.readlines()]
-            stopwords_list.extend(stopwords_from_file)
+        try:
+            with open(file_path, 'r', encoding='utf-8') as file:
+                stopwords_from_file = [line.strip() for line in file.readlines()]
+                stopwords_list.extend(stopwords_from_file)
+        except UnicodeDecodeError:
+            print(f"Error decoding file {filename}. It may have a different encoding.")
 
 # Create a set of stopwords for faster lookup
 stopwords_set = set(stopwords_list)

@@ -7,7 +7,7 @@ stopwords_directory = "/Users/kausik/Documents/Project BlackCoffer/StopWords"
 stopwords_list = []
 
 with open("/Users/kausik/Documents/Project BlackCoffer/StopWords/StopWords_Currencies.txt",'rb') as file:
-    stopwords_from_file = [line.strip() for line in file.readlines()]
+    stopwords_from_file = [line.strip().lower() for line in file.readlines()]
     stopwords_list.extend(stopwords_from_file)
 
 # Loop through each file in the stopwords directory
@@ -39,7 +39,7 @@ output_directory = "/Users/kausik/Documents/Project BlackCoffer/clean_files"
 for filename in os.listdir(input_directory):
     if filename.endswith('.txt'):
         input_path = os.path.join(input_directory, filename)
-        output_path = os.path.join(output_directory, filename)
+        output_path = os.path.join(output_directory, "clean_"+filename)
 
         with open(input_path, 'r', encoding='utf-8') as file:
             content = file.read()

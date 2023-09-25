@@ -9,4 +9,4 @@ textblob
 beautifulsoup4
 requests
 selenium
-scikit-learn-intelex
+scikit-learn
